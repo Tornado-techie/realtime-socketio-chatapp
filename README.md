@@ -5,7 +5,7 @@
 **Try the Live Application:**
 - **Frontend (Vercel):** [https://realtime-socketio-chatapp.vercel.app](https://realtime-socketio-chatapp.vercel.app)
 - **Backend API (Render):** [https://socket-io-chat-app-mhoi.onrender.com](https://socket-io-chat-app-mhoi.onrender.com)
-- **Health Check:** [https://socket-io-chat-app-mhoi.onrender.com/health](https://socket-io-chat-app-mhoi.onrender.com/health)
+- **Health Check:** [https://dashboard.render.com/web/srv-d40bpb2li9vc73c4r8f0/health](https://dashboard.render.com/web/srv-d40bpb2li9vc73c4r8f0/health)
 
 > **Note:** The backend may take 30-60 seconds to wake up on first request (Render free tier limitation).
 
