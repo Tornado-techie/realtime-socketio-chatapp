@@ -141,60 +141,6 @@ git push origin main
 ![Code Quality Checks](screenshots/code-quality.png)
 *Security audits and code quality analysis results*
 
-### 📸 How to Capture CI/CD Pipeline Screenshots
-
-#### 1. **CI/CD Pipeline Overview** (`cicd-pipeline-overview.png`)
-```
-1. Go to your GitHub repository
-2. Click on "Actions" tab
-3. Click on any recent workflow run
-4. Take screenshot showing:
-   - Workflow name and status
-   - All job stages (test, deploy-backend, deploy-frontend)
-   - Execution time and results
-   - Green checkmarks for successful runs
-```
-
-#### 2. **Test Results** (`test-results.png`)
-```
-1. In GitHub Actions, click on a completed workflow
-2. Click on "Test Application" job
-3. Expand the test execution steps
-4. Screenshot showing:
-   - Node.js version matrix (18.x, 20.x)
-   - Test execution output
-   - Coverage reports (if available)
-   - Lint results
-```
-
-#### 3. **Deployment Success** (`deployment-success.png`)
-```
-1. In GitHub Actions, show completed workflow with all green checkmarks
-2. Alternatively, show Render/Vercel deployment dashboards
-3. Screenshot should show:
-   - Successful deployment status
-   - Deployment time and duration
-   - Live application URLs
-   - Health check confirmations
-```
-
-#### 4. **Code Quality Checks** (`code-quality-checks.png`)
-```
-1. Click on "Code Quality Check" workflow
-2. Expand security audit steps
-3. Screenshot showing:
-   - npm audit results
-   - Security vulnerability scans
-   - Package outdated checks
-   - Overall security status
-```
-
-#### 📁 Screenshot Requirements:
-- **Format**: PNG or JPG
-- **Size**: 1200px width recommended
-- **Quality**: Clear text, readable interface elements
-- **Content**: Include timestamps and status indicators
-
 ---
 
 ## Advanced features implemented
@@ -265,14 +211,6 @@ Open http://localhost:3000 in your browser. The client connects to the server at
 
 ---
 
-## Deployment Configuration
-
-This project includes configuration for production deployment on Render:
-
-- **`render.yaml`**: Render service blueprint for backend deployment
-
----
-
 ## Environment variables
 
 ### Development (.env file in server/ folder):
@@ -298,14 +236,6 @@ NODE_ENV=production
 - Generate a secure JWT secret using: `node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"`
 - Client URL should point to your deployed frontend
 - **Security Warning:** Never commit real credentials to your repository. Replace `<username>`, `<password>`, `<cluster>`, and `<database>` with your actual MongoDB Atlas credentials only in your deployment environment variables.
-
----
-
-## How reply highlighting works (quick note for maintainers)
-
-- When a message is replied to, the message object contains a `repliedTo` field (either an id or an object depending on server serialization).
-- The client shows a condensed reply preview inside the replying message and allows clicking the preview to scroll to and temporarily highlight the original message.
-- The CSS class `highlighted-message` runs a brief pulse animation to make the origin obvious.
 
 ---
 
@@ -391,6 +321,4 @@ NODE_ENV=production
 
 ---
 
-Happy coding! by Salome Mundia#   U p d a t e d   1 1 / 0 7 / 2 0 2 5   1 8 : 1 8 : 2 0 
- 
- 
+Happy coding! by Salome Mundia
